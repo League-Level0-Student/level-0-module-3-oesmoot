@@ -15,7 +15,19 @@ public static void main(String[] args) {
 				if (caveDoor.equals("enter")) {
 					JOptionPane.showMessageDialog(null, "you walk though a long, dark hallway");
 					JOptionPane.showMessageDialog(null, "you emerge in a massive, dimly lit cave");
-					JOptionPane.showMessageDialog(null, "");
+					JOptionPane.showMessageDialog(null, "straight ahead there is some sort of cube-like thing with what looks to be a face");
+					JOptionPane.showMessageDialog(null, "behind you there are some very sharp-looking cave formations");
+					JOptionPane.showMessageDialog(null, "to your left there is a rather large spider");
+					JOptionPane.showMessageDialog(null, "to your right there is a group of bats");
+					String direction1 = JOptionPane.showInputDialog("which way do you go?");
+					if(direction1.equals("fwd")) {
+						String jumpTrap = JOptionPane.showInputDialog("you walk forward, but stop when you look closer and realise it is an arrow trap, do you jump over it? (yes or no)");
+					}
+					else if(direction1.equals("back")) {
+						JOptionPane.showMessageDialog(null, "you rush towards the spikes as you realise there are rare gems in them, but you slip, fall into the spikes, and die.");
+					}
+					else if(direction1.equals("left"));
+					
 				}
 			}
 			else if (caveMouth.equals("back")) {
